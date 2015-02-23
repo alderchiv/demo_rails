@@ -1,0 +1,10 @@
+<% date = `date` %>
+<% calendar = `calendar` %>
+
+<h1>Hello from Rails <%= date %></h1>
+
+<h2>Calendar:</h2>
+
+<% calendar.split("\n").each do |day| %>
+	<p><%= day %></p>	
+<% end %>

@@ -1,0 +1,8 @@
+%h1
+	Say#goodbye
+%p= "Find me in app/views/say/goodbye.html.erb"
+= @time
+
+%p
+	/ %a(href = "/say/hello") hello!	=> bad practice, use helper 'link_to' instead
+	=link_to "hello!", say_hello_path
